@@ -1,0 +1,10 @@
+[package]
+name = "xcm-decoder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3.22", features = ["derive"] }
+hex = "0.4.3"
+parity-scale-codec = "3.6.4"
+xcm = { git = "https://github.com/paritytech/polkadot" }
