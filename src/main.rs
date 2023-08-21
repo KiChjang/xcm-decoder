@@ -25,8 +25,7 @@ fn main() -> Result<(), String> {
 }
 
 fn stringize_v2_xcm(xcm: &xcm::v2::Xcm<()>) -> String {
-    xcm
-        .0
+    xcm.0
         .iter()
         .map(|inst| {
             use xcm::v2::Instruction::*;
@@ -70,8 +69,7 @@ fn stringize_v2_xcm(xcm: &xcm::v2::Xcm<()>) -> String {
 }
 
 fn stringize_v3_xcm(xcm: &xcm::v3::Xcm<()>) -> String {
-    xcm
-        .0
+    xcm.0
         .iter()
         .map(|inst| {
             use xcm::v3::Instruction::*;
