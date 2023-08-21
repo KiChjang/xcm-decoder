@@ -129,7 +129,7 @@ fn print_v3_xcm(xcm: &xcm::v3::Xcm<()>) {
             };
             inst_str.to_string()
         })
-        .fold("v3:".to_string(), |mut acc, inst| {
+        .fold("v3".to_string(), |mut acc, inst| {
             acc.push(',');
             acc.push_str(&inst);
             acc
